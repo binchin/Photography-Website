@@ -178,6 +178,7 @@ nav{
 .gallery{
     display: grid;
     min-height: 100vh;
+    position: relative;
     grid-template-columns: repeat(3, 1fr);
 }
 .image-1{
@@ -191,6 +192,17 @@ nav{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.gallery-header{
+    position: absolute;
+    top: 50%;
+    color: white;
+    text-align: center;
+    background-color: var(--background-color);
+    left: 50%;
+    padding: 2rem 5rem;
+    transform: translate(-50%,-50%);
 }
 
 
@@ -270,7 +282,10 @@ nav{
         grid-column: auto;
     }
     .gallery{
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+    .gallery-header{
+        display: none;
     }
 }
 
