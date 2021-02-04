@@ -13,6 +13,7 @@ html {
   --big: calc(4rem + 1vw);
   --special-color: #906272;
   --background-color: #414141;
+  scroll-behavior: smooth;
 }
 
 /* fonts  */
